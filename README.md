@@ -1,12 +1,8 @@
-Contraintes:
-	Exercice libre en termes technologiques (mais basé sur le langage Java)
-	Temps: 1h30 - 2h
-
 taxes
 =====
 
-Story: Calcul de taxes
-======================
+Story: Calcul de taxes en utilisant JAVA 8 avec le design pattern Strategy
+==========================================================================
 
 Enoncé
 ------
