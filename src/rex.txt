@@ -1,0 +1,9 @@
+interface Panier {
+  void add(Product p);
+  void remove(Product p);
+}
+
+interface PriceComputationPolicy {
+  double compute(Panier p);
+  double compute(Product p);
+}
