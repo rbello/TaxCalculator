@@ -1,0 +1,23 @@
+
+class XXX implements PriceComputationStrategy {
+
+  double computePrice(Panier p) {
+    // for each product of p
+    sum += computePrice(p.getProduct(i));
+  }
+
+  double computePrice(Product p, Customer c) {
+  
+    float promotionRate = c.getPromotionRate();
+    
+    float price = p.getRawPrice() * promotionRate;
+  
+    float taxeRate = getTaxeRateByCategory(p.getCategory(), p.isImportation());
+    
+    float taxe = price * taxeRate;
+  
+    return new ComputeResult(price, taxe);
+  
+  }
+
+}
